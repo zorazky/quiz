@@ -89,7 +89,7 @@ header {
   width: 810px;
   margin: auto;
   margin-top: 90px;
-  font-size: 3.6em;
+  font-size: 2.8em;
   text-align: center;
 }
 
@@ -183,16 +183,23 @@ ul li .check::before {
   -webkit-transition: background 0.25s linear;
 }
 
-input[type=radio]:checked ~ .check {
-  border: 5px solid #0DFF92;
+.correct {
+   color: #0DFF92;
+}
+
+.incorrect {
+   color: red;
+}
+
+#correctA {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+
 }
 
 input[type=radio]:checked ~ .check::before{
-  background: #0DFF92;
-}
-
-input[type=radio]:checked ~ label{
-  color: #0DFF92;
+  background: #FFF;
 }
 
 #mybutton {
